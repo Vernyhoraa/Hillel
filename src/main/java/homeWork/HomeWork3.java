@@ -18,11 +18,11 @@ public class HomeWork3 {
                 result = result + mass[i];
             }
         }
-        System.out.println(result);
+        System.out.println("Сумма всех чисел больше 5 и меньше 45 = "+result);
 
         //    вывести в консоль все четные положительные числа
         for (int i = 0; i < mass.length; i++) {
-            if (mass[i] % 2 == 0 && mass[i] > 0) {
+            if (mass[i]%2==0 && mass[i] > 0) {
                 System.out.println("четное положительное: " + mass[i]);
             }
         }
