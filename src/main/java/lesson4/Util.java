@@ -3,24 +3,25 @@ package lesson4;
 //Создать класс Util и 2 статических метода в нем которые принимать массив типа int
 public class Util {
     //    вывести в консоль сумму всех чисел больше 5 и меньше 45 (для подсчета использовать цикл)
-    public static int MathUtils1(int[] mass) {
+    public static int sum(int[] mass) {
         int result = 0;
-        for (int i = 0; i < mass.length; i++) {
-            if (mass[i] > 5 && mass[i] < 45) {
-                result = result + mass[i];
+        for (int j : mass) {
+            if (j > 5 && j < 45) {
+                result = result + j;
             }
         }
         return result;
     }
 
     //    вывести в консоль все четные положительные числа.
-    public static void MathUtils2(int[] array) {
-        for (int i = 0; i < array.length; i++) {
-            if (array[i] % 2 == 0 && array[i] > 0) {
-                System.out.println("четное положительное: " + array[i]);
+    public static void positivePrint(int[] array) {
+        for (int j : array) {
+            if (j % 2 == 0 && j > 0) {
+                System.out.println("четное положительное: " + j);
             }
         }
     }
+
 }
 
 
